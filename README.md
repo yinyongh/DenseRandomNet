@@ -13,7 +13,11 @@ Download the small NORB dataset from https://cs.nyu.edu/~ylclab/data/norb-v1.0-s
 Open the script "preprocess_norb.m" in MATLAB and run it. This script downsamples the 96x96 images in the norb dataset into 32x32 images. Note that running this script may encounter the "Out of Memory" error in MATLAB if the computer does not have enough memory. Alternatively, for a computer with less memory, use the script "preprocess_norb_small_batch.m" to preprocess the dataset.
 
 ## 2. Run the main script
-Open the script "Use_MCMLDRNN_for_NORB.m" in MATLAB and run it. This script uses the deep learning tool based on dense random neural network, implemented as "MCMLDRNN.m", to learn and classify the downsampled small norb dataset. The training and testing accuries and training and testing time are stored in ''MCMLDRNN_for_norb.mat''.
+Open the script "Use_MCMLDRNN_for_NORB.m" in MATLAB and run it. This script uses the deep learning tool based on dense random neural network, implemented as "MCMLDRNN.m", to learn and classify the downsampled small norb dataset. The trained MCMLDRNN model is stored in ''MCMLDRNN_for_norb.mat''.
+The following training and testing accuracies are obtained in a single trial:
+TrainingAccuracy = 0.999218106995885
+TestingAccuracy = 0.892839506172839
+Note that the accuracies can be slightly different in different trials.
 
 # References
 [1] Gelenbe, Erol; Yin, Yonghua. Deep Learning with Random Neural Networks. 2016 International Joint Conference on Neural Networks (IJCNN) 2016, pp. 1633–1638.

@@ -29,10 +29,10 @@ imshow(reshape(train_x(index,1:96*96), 96,96),[0 255]);
 % create a mask to downsample the 96x96 images into 32x32 images
 mask_image = ones(96,96);
 for i = 1:3:96
-    mask_image(i:i+1,:) = 0;
+    mask_image([i+1 i+2],:) = 0;
 end
 for i = 1:3:96
-    mask_image(:,i:i+1) = 0;
+    mask_image(:,[i+1 i+2]) = 0;
 end
 mask_image = reshape(mask_image, 1, 96*96);
 mask_image = [mask_image mask_image];
