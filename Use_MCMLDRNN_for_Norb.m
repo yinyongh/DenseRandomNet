@@ -3,8 +3,9 @@
 % Please cite the following papers if you use this code.
 % [1] Gelenbe, Erol; Yin, Yonghua. Deep Learning with Random Neural Networks. 2016 International Joint Conference on
 % Neural Networks (IJCNN) 2016, pp. 1633�1638.
-% [2] Yin, Yonghua; Gelenbe, Erol. Deep learning in multi-layer architectures of dense nuclei.
-% arXiv preprint arXiv:1609.07160 2016.
+% [2] Yin, Yonghua; Gelenbe, Erol. Deep learning in multi-layer
+% architectures of dense nuclei. In NIPS 2016 workshop: Brains and Bits: Neuroscience Meets Machine Learning 
+% (available in https://arxiv.org/abs/1609.07160).
 % [3] Gelenbe, Erol; Yin, Yonghua. Deep Learning with Dense Random Neural Networks. International Conference on 
 % Man-Machine Interactions. Springer, 2017, pp. 3-18.
 % [4] Yin, Yonghua. "Deep Learning with the Random Neural Network and its Applications." arXiv preprint arXiv:1810.08653 (2018).
