@@ -9,7 +9,7 @@
 
 close all;
 clear all;
-fid=fopen('norb_dataset\smallnorb-5x46789x9x18x6x2x96x96-training-dat.mat','r');
+fid=fopen('norb_dataset/smallnorb-5x46789x9x18x6x2x96x96-training-dat.mat','r');
 fread(fid,4,'uchar');   % result = [85 76 61 30], byte matrix(in base 16: [55 4C 3D 1E])
 fread(fid,4,'uchar');   % result = [4 0 0 0], ndim = 4
 fread(fid,4,'uchar');   % result = [236 94 0 0], dim0 = 24300 (=94*256+236)
@@ -47,7 +47,7 @@ figure(2);
 imshow(reshape(train_x(index,1:32*32), 32,32),[0 255]);
 
 % read all the training labels
-fid=fopen('norb_dataset\smallnorb-5x46789x9x18x6x2x96x96-training-cat.mat','r');
+fid=fopen('norb_dataset/smallnorb-5x46789x9x18x6x2x96x96-training-cat.mat','r');
 fread(fid,4,'uchar');   % result = [84 76 61 30], int matrix (54 4C 3D 1E)
 fread(fid,4,'uchar');   % result = [1 0 0 0],   ndim = 1
 fread(fid,4,'uchar');   % result = [236 94 0 0],  dim0 = 24300
@@ -60,7 +60,7 @@ label=double(trainlabels+1);
 TrainingData=[train_x,label];
 
 %% load and structure the testing dataset
-fid=fopen('norb_dataset\smallnorb-5x01235x9x18x6x2x96x96-testing-dat.mat','r');
+fid=fopen('norb_dataset/smallnorb-5x01235x9x18x6x2x96x96-testing-dat.mat','r');
 fread(fid,4,'uchar');  
 fread(fid,4,'uchar'); 
 fread(fid,4,'uchar'); 
@@ -85,7 +85,7 @@ figure(4);
 imshow(reshape(test_x(index,1:32*32), 32,32),[0 255]);
 
 % read all the testing labels
-fid=fopen('norb_dataset\smallnorb-5x01235x9x18x6x2x96x96-testing-cat.mat','r');
+fid=fopen('norb_dataset/smallnorb-5x01235x9x18x6x2x96x96-testing-cat.mat','r');
 fread(fid,4,'uchar');   % result = [84 76 61 30], int matrix (54 4C 3D 1E)
 fread(fid,4,'uchar');   % result = [1 0 0 0],   ndim = 1
 fread(fid,4,'uchar');   % result = [236 94 0 0],  dim0 = 24300
